@@ -22965,12 +22965,25 @@ p.lead {
   border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 1.5rem;
+  animation: blink-animation 2s steps(2, start) infinite;
+  -webkit-animation: blink-animation 2s steps(2, start) infinite;
 }
+
+ @keyframes blink-animation {
+        to {
+          background-color: #7bb3db;
+        }
+      }
+      @-webkit-keyframes blink-animation {
+        to {
+          background-color: #6796b8;
+        }
+      }
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #6796b8;
+  background-color: #c9ced1;
 }
 
 .dev-icons {
@@ -23122,3 +23135,15 @@ input:checked + .slider:before {
 }
 
 }
+
+.myName {
+  transform: scale(0.94);
+  animation: scale 2s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
