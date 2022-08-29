@@ -23168,3 +23168,19 @@ input:checked + .slider:before {
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+
+.progress-bar{
+  background: -webkit-linear-gradient(#6699ff, #ccffff) !important;
+}
+
+.d-flex {
+    padding:  20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.d-flex:hover{
+  border: 10px solid transparent;
+  border-image: linear-gradient(to right, #6699ff, #ccffff);
+  border-image-slice: 1;
+}
