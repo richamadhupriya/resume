@@ -53,6 +53,7 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
+  --bs-border: #eee;
 }
 
 
@@ -62,6 +63,7 @@
     --bs-body-color: #fff;
     --bs-gray: #fff;
     --bs-gray-dark: #fff;
+    --bs-border: #000;
     --bs-link: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));;
 }
 
@@ -23197,7 +23199,7 @@ input:checked + .slider:before {
 
 .d-flex {
     padding:  20px;
-    border: 1px solid #eee;
+    border: 1px solid var(--bs-border);
     border-radius: 10px;
 }
 
@@ -23207,6 +23209,7 @@ input:checked + .slider:before {
   border-image-slice: 1;*/
 
   color: #fff;
+  border-color: var(--bs-border);
 
   background: linear-gradient(-45deg, #6355a4, #6355a4, #e89a3e, #e89a3e);
   background-size: 300%;
