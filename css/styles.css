@@ -65,7 +65,7 @@
 
 .title{
   color: var(--bs-blue);
-}
+  }
 
 
 *,
@@ -11403,6 +11403,8 @@ p.lead {
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
+
+
 .social-icons .social-icon:hover {
   background-color: #6796b8;
 }
@@ -22964,16 +22966,29 @@ p.lead {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  /*background-color: #495057;*/
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
-  margin-right: 1.5rem;
+  margin-right: 1.5rem;/*
   animation: blink-animation 2s steps(2, start) infinite;
-  -webkit-animation: blink-animation 2s steps(2, start) infinite;
+  -webkit-animation: blink-animation 2s steps(2, start) infinite;*/
+  background: linear-gradient(-45deg, #6355a4, #6355a4, #e89a3e, #e89a3e);
+  background-size: 300%;
+  animation: animated_text 6s ease-in-out infinite;
+  -moz-animation: animated_text 10s ease-in-out infinite;
+  -webkit-animation: animated_text 10s ease-in-out infinite;
 }
 
- @keyframes blink-animation {
+@keyframes animated_text {
+  0% { background-position: 0px 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0px 50%; }
+
+
+}
+
+/* @keyframes blink-animation {
         to {
           background-color: #7bb3db;
         }
@@ -22982,7 +22997,7 @@ p.lead {
         to {
           background-color: #6796b8;
         }
-      }
+      }*/
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
@@ -23179,17 +23194,25 @@ input:checked + .slider:before {
     border-radius: 10px;
 }
 
-.d-flex:hover{
+.d-flex:hover{/*
   border: 10px solid transparent;
   border-image: linear-gradient(to right, #6699ff, #ccffff);
-  border-image-slice: 1;
+  border-image-slice: 1;*/
+
+  color: #fff;
+
+  background: linear-gradient(-45deg, #6355a4, #6355a4, #e89a3e, #e89a3e);
+  background-size: 300%;
+  animation: animated_text 4s ease-in-out infinite;
+  -moz-animation: animated_text 6s ease-in-out infinite;
+  -webkit-animation: animated_text 6s ease-in-out infinite;
 }
 
 .flip-card {
   background-color: white;
-  width: 400px;
+  width: 300px;
   height: 200px;
-  border: 1px solid #f1f1f1;
+  /*border: 1px solid #f1f1f1;*/
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -23225,7 +23248,14 @@ input:checked + .slider:before {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: #6796b8;
+  /*background-color: #6796b8;*/
+
+
+  background: linear-gradient(-45deg, #6355a4, #6355a4, #e89a3e, #e89a3e);
+  background-size: 300%;
+  animation: animated_text 6s ease-in-out infinite;
+  -moz-animation: animated_text 10s ease-in-out infinite;
+  -webkit-animation: animated_text 10s ease-in-out infinite;
   color: white;
   transform: rotateY(180deg);
 }
@@ -23233,4 +23263,24 @@ input:checked + .slider:before {
 .inner-text{
   position: relative;
   top:40px !important;
+}
+
+.fa-html5{
+  color: #F06529;
+}
+.fa-css3-alt{
+  color: #264de4;
+}
+.fa-js-square{
+  color: #f0db4f;
+}
+.fa-angular{
+  color: #dd1b16;
+}
+.fa-node-js{
+  color: #3c873a;
+}
+.fa-git-alt{
+  /*color: #f1502f;*/
+  color: #3e2c00;
 }
