@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 :root {
+  --bs-link: navy;
   --bs-blue: #6796b8;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -61,6 +62,7 @@
     --bs-body-color: #fff;
     --bs-gray: #fff;
     --bs-gray-dark: #fff;
+    --bs-link: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));;
 }
 
 .title{
@@ -241,7 +243,7 @@ sup {
 }
 
 a {
-  color: #6796b8;
+  color: var(--bs-link);
   text-decoration: underline;
 }
 a:hover {
@@ -11641,6 +11643,7 @@ input:checked + .slider:before {
     --bs-body-color: #fff;
     --bs-gray: #fff;
     --bs-gray-dark: #fff;
+    --bs-link: #fff;
 }
 
 
@@ -11817,7 +11820,7 @@ sup {
 }
 
 a {
-  color: #6796b8;
+  color: var(--bs-link);
   text-decoration: underline;
 }
 a:hover {
