@@ -61,3 +61,15 @@ if (currentTheme) {
 }
 
 
+function sendMail() {
+   if(document.getElementById('subject') !== null || document.getElementById('name') !== null){
+        var link = "mailto:richa.madhupriya@outlook.com"
+             + "?cc=richamadhupriya338@gmail.com"
+             + "&subject=" + encodeURIComponent("Hello there!!")
+             + "&body=" + encodeURIComponent(document.getElementById('subject').value)
+   }
+    
+    window.location.href = link;
+    
+    
+}
